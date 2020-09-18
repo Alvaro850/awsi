@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class='container'>
+    <div class="jumbotron">
+        <h1><p class="text-center">iPhone Camera</p> <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+          </div></h1>
+        <p class="text-center"><img id="video" class="rounded" src="{{ url_for('video_feed') }}" width="720" height="480"></p>
+        <a href="/photo" class="btn btn-dark" role="button">Take Photo</a>
+
+    </div>
+</div>
+{% endblock %}
